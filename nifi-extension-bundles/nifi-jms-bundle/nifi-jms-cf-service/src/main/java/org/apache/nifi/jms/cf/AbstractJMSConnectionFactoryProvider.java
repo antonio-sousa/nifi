@@ -39,7 +39,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * Base JMS controller service implementation that provides verification logic.
  */
 public abstract class AbstractJMSConnectionFactoryProvider extends AbstractControllerService implements JMSConnectionFactoryProviderDefinition, VerifiableControllerService {
-    private static final String ESTABLISH_CONNECTION = "Establish Connection";
+    String ESTABLISH_CONNECTION = "Establish Connection";
     private static final String VERIFY_JMS_INTERACTION = "Verify JMS Interaction";
 
     protected volatile JMSConnectionFactoryHandlerDefinition delegate;
